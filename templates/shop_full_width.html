@@ -13,7 +13,7 @@
                         <div class="breadcrumb-nav">
                             <nav aria-label="breadcrumb">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="{% url 'home_1:home1'%}">Home</a></li>
                                     <li><a href="shop-grid-sidebar-left.html">Shop</a></li>
                                     <li class="active" aria-current="page">Shop Full Width</li>
                                 </ul>
@@ -84,7 +84,7 @@
                                                     <div class="product-default-single border-around" data-aos="fade-up"  data-aos-delay="0">
                                                         <div class="product-img-warp">
                                                             <a href="product-details-default.html" class="product-default-img-link">
-                                                                <img src="{% static 'assets/images/products_images/aments_products_image_1.jpg'%}" alt="" class="product-default-img img-fluid">
+                                                                <img src="{{full_with.3.photo.url}}" alt="" class="product-default-img img-fluid">
                                                             </a>
                                                             <div class="product-action-icon-link">
                                                                 <ul>
@@ -106,7 +106,7 @@
                                                     <div class="product-default-single border-around" data-aos="fade-up"  data-aos-delay="200" >
                                                         <div class="product-img-warp">
                                                             <a href="product-details-default.html" class="product-default-img-link">
-                                                                <img src="{% static 'assets/images/products_images/aments_products_image_2.jpg'%}" alt="" class="product-default-img img-fluid">
+                                                                <img src="{{full_with.4.photo.url}}" alt="" class="product-default-img img-fluid">
                                                             </a>
                                                             <div class="product-action-icon-link">
                                                                 <ul>

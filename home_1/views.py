@@ -7,5 +7,3 @@ def home_1(request):
     return render(request, 'home_1.html', context)
 
 
-
-

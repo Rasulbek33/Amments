@@ -122,11 +122,11 @@
                             <nav>
                                 <ul>
                                     <li class="has-dropdown">
-                                        <a class="active main-menu-link" href="{% url 'home_1:home_1'%}">Home <i class="fa fa-angle-down"></i></a>
+                                        <a class="active main-menu-link" href="{% url 'home_1:home1'%}">Home <i class="fa fa-angle-down"></i></a>
                                         <!-- Sub Menu -->
                                         <ul class="sub-menu">
-                                            <li><a href="{% url 'home_1:home_1'%}">Home 1</a></li>
-                                            <li><a href="{% url 'home_2:home_2'%}">Home 2</a></li>
+                                            <li><a href="{% url 'home_1:home1'%}">Home 1</a></li>
+                                            <li><a href="{% url 'home_2:home2'%}">Home 2</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown has-megaitem">
@@ -138,7 +138,7 @@
                                                 <li class="mega-menu-item">
                                                     <a href="#" class="mega-menu-item-title">Shop Layouts</a>
                                                     <ul class="mega-menu-sub">
-                                                        <li><a href="{% url 'shop:Grid_sidebar'%}">Grid Left Sidebar</a></li>
+                                                        <li><a href="{% url 'shop:grid_sidebar'%}">Grid Left Sidebar</a></li>
                                                         <li><a href="{% url 'shop:Full_with'%}">Full Width</a></li>
                                                         <li><a href="{% url 'shop:List_sidebar'%}">List Left Sidebar</a></li>
                                                     </ul>
@@ -159,11 +159,11 @@
                                                 <li class="mega-menu-item">
                                                     <a href="#" class="mega-menu-item-title">Product Types</a>
                                                     <ul class="mega-menu-sub">
-                                                        <li><a href="product-details-default.html">Product Default</a></li>
+                                                        <li><a href="{% url 'shop:product_detail'%}">Product Default</a></li>
                                                         <li><a href="product-details-variable.html">Product Variable</a></li>
                                                         <li><a href="product-details-affiliate.html">Product Referral</a></li>
-                                                        <li><a href="product-details-group.html">Product Group</a></li>
-                                                        <li><a href="product-details-single-slide.html">Product Slider</a></li>
+                                                        <li><a href="{% url 'shop:product_group'%}">Product Group</a></li>
+                                                        <li><a href="{% url 'shop:product_slider'%}">Product Slider</a></li>
                                                     </ul>
                                                 </li>
                                                 <!-- Mega Menu Sub Link -->
@@ -181,7 +181,7 @@
                                             </ul>
                                             <div class="menu-banner">
                                                 <a href="" class="menu-banner-link">
-                                                    <img class="menu-banner-img" src="{% static 'assets/images/banner/menu-banner.jpg'%}" alt="">
+                                                    <img class="menu-banner-img" src="{% static 'assets/images/banner/soat.jpg'%}" alt="">
                                                 </a>
                                             </div>
                                         </div>
